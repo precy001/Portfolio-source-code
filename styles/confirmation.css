@@ -1,0 +1,107 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bricolage grotesque', sans-serif;
+    background-color:black;
+    color: white;
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 152, 255, .8);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.remove{
+    display: none;
+}
+
+.cursor::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -9px;
+    left: -9px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+ @keyframes cursorAnim{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(.4);
+    }
+} 
+
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid #0098ff;
+}
+
+@keyframes cursorAnim3{
+   0%{
+        transform: scale(1);
+   }
+
+   50%{
+    transform: scale(3);
+   }
+
+   100%{
+    transform: scale(1);
+    opacity: 0;
+   }
+}
+
+.container{
+    margin-top: 12%;
+}
+
+.message{
+    margin-top: 2%;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 4%;
+}
+
+svg{
+    width: 4rem;
+}
+
+.login-button{
+    border: 1px solid #0098ff;
+    padding: .5rem;
+    background-color: #0098ff;
+    border-radius: 1.2rem;
+    transition: .4s ease-in-out;
+    color: #fcfcfc;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.login-button:hover{
+    background-color: transparent;
+}
