@@ -321,7 +321,7 @@ body{
 
  .each-stack{
     border: 1px solid #0098ff;
-    border-radius: 1.2rem;
+    border-radius: .2rem;
     padding: .4rem;
     color: #fcfcfc;
     display: inline;
