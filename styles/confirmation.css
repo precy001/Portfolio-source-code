@@ -105,3 +105,9 @@ svg{
 .login-button:hover{
     background-color: transparent;
 }
+
+@media all and (orientation:portrait){
+    .cursor{
+        display:none;
+    }
+}
