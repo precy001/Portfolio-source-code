@@ -18,10 +18,8 @@ document.addEventListener('click', () =>{
 
 const sendBtn = document.querySelector('.send-btn')
 sendBtn.addEventListener('click', () => {
-    if(mailBox.value = '' || messageBox.value = '' || nameBox.value = ''){
-
-    }else{
-         sendBtn.innerHTML = '<div class="loader"></div>'
+    if(nameBox.value !== '' && messageBox.value !== '' && mailBox.value !== ''){
+        sendBtn.innerHTML = '<div class="loader"></div>'
     }
    
 })
