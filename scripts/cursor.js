@@ -1,3 +1,8 @@
+const nameBox = document.querySelector('.name-box')
+const messageBox = document.querySelector('.message-box')
+const mailBox = document.querySelector('.mail-box')
+
+
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e =>{
     cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left:"+(e.pageX - 10)+"px;")
@@ -13,6 +18,10 @@ document.addEventListener('click', () =>{
 
 const sendBtn = document.querySelector('.send-btn')
 sendBtn.addEventListener('click', () => {
+    if(mailBox.value = '' || messageBox.value = '' || nameBox.value = ''){
 
-    sendBtn.innerHTML = '<div class="loader"></div>'
+    }else{
+         sendBtn.innerHTML = '<div class="loader"></div>'
+    }
+   
 })
