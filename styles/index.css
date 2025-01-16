@@ -188,16 +188,18 @@ body{
 
 .contact-me{
     border: 1px solid #0098ff;
-    padding: .5rem;
+    padding: .4rem;
     background-color: #0098ff;
-    border-radius: 1.2rem;
+    color: #fcfcfc;
+    border-radius: .2rem;
     transition: .4s ease-in-out;
 }
 
 .resume{
     border: 1px solid #0098ff;
-    padding: .5rem;
-    border-radius: 1.2rem;
+    border-radius: .2rem;
+    padding: .4rem;
+    color: #fcfcfc;
     transition: .4s ease-in-out;
 }
 
@@ -319,7 +321,7 @@ body{
 
  .each-stack{
     border: 1px solid #0098ff;
-    border-radius: 1.2rem;
+    border-radius: .2rem;
     padding: .4rem;
     color: #fcfcfc;
     display: inline;

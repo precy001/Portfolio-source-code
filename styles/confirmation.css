@@ -93,15 +93,19 @@ svg{
 
 .login-button{
     border: 1px solid #0098ff;
-    padding: .5rem;
+    padding: .4rem;
     background-color: #0098ff;
-    border-radius: 1.2rem;
-    transition: .4s ease-in-out;
     color: #fcfcfc;
-    text-decoration: none;
-    font-size: .8rem;
+    border-radius: .2rem;
+    transition: .4s ease-in-out;
 }
 
 .login-button:hover{
     background-color: transparent;
+}
+
+@media all and (orientation:portrait){
+    .cursor{
+        display:none;
+    }
 }
